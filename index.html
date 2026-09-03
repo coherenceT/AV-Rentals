@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AV Rentall — Full Service Entertainment Technology &amp; Event Infrastructure</title>
+  <meta name="description" content="Full service entertainment technology and event infrastructure supplier — delivering end-to-end technical production, high-grade equipment rental, staging and custom sets for live events, corporate functions, concerts and broadcasts.">
+  <link rel="icon" type="image/png" href="assets/logo/av-rentall-logo-white-transparent.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="AV Rentall — home">
+        <img src="assets/logo/av-rentall-logo-white-transparent.png" alt="AV Rentall" width="1051" height="841">
+      </a>
+
+      <div class="header-actions">
+        <!-- WhatsApp — always on the bar, next to the menu button on mobile -->
+        <a class="wa-bar wa-link" href="https://wa.me/27645520890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us — opens a chat with AV Rentall">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07a8.2 8.2 0 0 1-2.4-1.49 9 9 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35ZM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 6.99 2.9 9.83 9.83 0 0 1 2.9 7 9.9 9.9 0 0 1-9.9 9.87Zm8.42-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.47-8.41Z"/></svg>
+          <span class="sr-only">WhatsApp us</span>
+        </a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="nav" id="nav-links" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#equipment">Equipment</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-wa-desktop">
+            <a class="wa-link" href="https://wa.me/27645520890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us — opens a chat with AV Rentall">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07a8.2 8.2 0 0 1-2.4-1.49 9 9 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35ZM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 6.99 2.9 9.83 9.83 0 0 1 2.9 7 9.9 9.9 0 0 1-9.9 9.87Zm8.42-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.47-8.41Z"/></svg>
+              <span class="sr-only">WhatsApp us</span>
+            </a>
+          </li>
+          <li class="nav-theme">
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode">
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+              <span class="theme-label">Dark</span>
+            </button>
+          </li>
+          <li class="nav-cta"><a class="btn btn-white btn-sm" href="#contact">Start a Conversation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         SECTION 1 — HERO
+         ============================================================ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <img class="hero-logo" src="assets/logo/av-rentall-logo-white-transparent.png"
+               alt="AV Rentall — ALL AUDIOVISUAL &amp; MORE" width="1051" height="841">
+          <h1 class="display">
+            <span class="display-line">Full service entertainment technology and event infrastructure supplier</span>
+            <span class="display-line display-line-sub">— delivering end-to-end technical production, high-grade equipment rental, staging and custom sets for live events, corporate functions, concerts and broadcasts.</span>
+          </h1>
+          <div class="hero-actions">
+            <a class="btn btn-white" href="#services">Explore Services</a>
+            <a class="btn btn-outline-light" href="#contact">Start a Conversation</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <img src="assets/photography/stage-lights-smoke-unsplash.jpg"
+               alt="Stage lighting beams cutting through haze during a live production" width="3000" height="1987">
+        </figure>
+      </div>
+      <p class="hero-meta"><span>Live Events</span><span>Corporate</span><span>Broadcast</span></p>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — COMPANY OVERVIEW
+         ============================================================ -->
+    <section class="section" id="overview" aria-labelledby="overview-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Company Overview</p>
+          <h2 class="h2" id="overview-heading">Who We Are</h2>
+        </header>
+
+        <div class="overview-grid">
+          <article class="overview-block">
+            <h3 class="h3-label">Our Mission:</h3>
+            <p class="lede">AV Rentall exists to power unforgettable experiences. We supply the complete technical backbone of live events — from pre-production planning through on-site execution — so that every performance, presentation, and broadcast lands with maximum impact.</p>
+          </article>
+          <article class="overview-block">
+            <h3 class="h3-label">Our Approach:</h3>
+            <p>We combine high-grade inventory with seasoned technical crew and end-to-end project management. Whether it's an intimate corporate dinner or a large-scale outdoor festival, AV Rentall delivers precision-engineered solutions tailored to each event's unique requirements.</p>
+          </article>
+        </div>
+
+        <div class="mix-panel" role="img" aria-label="Audience mix: Live Events 30 percent, Corporate 55 percent, Broadcast 15 percent">
+          <div class="mix-head">
+            <h3 class="mix-title">Audience Mix</h3>
+            <ul class="mix-legend">
+              <li><span class="dot dot-corporate"></span>Corporate</li>
+              <li><span class="dot dot-live"></span>Live Events</li>
+              <li><span class="dot dot-broadcast"></span>Broadcast</li>
+            </ul>
+          </div>
+
+          <div class="bar-row">
+            <span class="bar-label"><strong>Corporate</strong><span class="bar-desc">Conferences, product launches, and brand activations.</span></span>
+            <div class="bar-track"><span class="bar-fill bar-corporate" style="--w:55%" aria-hidden="true"></span></div>
+            <span class="bar-pct">55%</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label"><strong>Live Events</strong><span class="bar-desc">Concerts, festivals, and touring productions.</span></span>
+            <div class="bar-track"><span class="bar-fill bar-live" style="--w:30%" aria-hidden="true"></span></div>
+            <span class="bar-pct">30%</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label"><strong>Broadcast</strong><span class="bar-desc">TV, streaming, and studio productions.</span></span>
+            <div class="bar-track"><span class="bar-fill bar-broadcast" style="--w:15%" aria-hidden="true"></span></div>
+            <span class="bar-pct">15%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — SERVICES
+         ============================================================ -->
+    <section class="section section-alt" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Services</p>
+          <h2 class="h2" id="services-heading">End-to-End Technical Production</h2>
+          <p class="section-intro">AV Rentall provides a comprehensive suite of services designed to handle every layer of event technology — from concept and design through to live delivery and pack-down. Our integrated approach eliminates the friction of managing multiple vendors.</p>
+        </header>
+
+        <div class="cards cards-3">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">
+              <!-- speaker / waveform -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9.5 9.5 0 0 1 0 13"/></svg>
+            </span>
+            <h3 class="h3-card">Audio Systems</h3>
+            <p>Line arrays, subwoofers, stage monitoring, in-ear systems, and FOH engineering for venues of all sizes — indoors and outdoors.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">
+              <!-- screen / display -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="1"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="m6 9 3 2.5L6 14"/></svg>
+            </span>
+            <h3 class="h3-card">Visual &amp; Display</h3>
+            <p>LED walls, projection systems, video switching, IMAG, content playback, and broadcast-grade camera packages for live and streamed events.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">
+              <!-- rigging / beam -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 20 4"/><path d="m6.5 21.5 2-2"/><path d="m2.5 17.5 2-2"/><path d="m14.5 5.5 4-4"/><path d="m13 3-10 10"/></svg>
+            </span>
+            <h3 class="h3-card">Lighting &amp; Rigging</h3>
+            <p>Intelligent lighting rigs, trussing, motors, and structural stage builds custom-designed for the aesthetic and safety demands of each production.</p>
+          </article>
+        </div>
+
+        <p class="note"><strong>Every service is backed by</strong> experienced crew, pre-event technical walkthroughs, and on-call support throughout your event.</p>
+
+        <figure class="band">
+          <img src="assets/photography/sound-mixing-console-unsplash.jpg"
+               alt="Sound mixing console with faders and meters in a dark production environment" width="3000" height="2000">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — MARKET POSITION
+         ============================================================ -->
+    <section class="section section-dark" id="market" aria-labelledby="market-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker kicker-dark">Market Position</p>
+          <h2 class="h2 h2-dark" id="market-heading">Growing Demand for Live Event Technology</h2>
+          <p class="section-intro section-intro-dark">The live events and AV services industry continues to expand rapidly, driven by the resurgence of in-person experiences, increased corporate event spend, and the growing convergence of live and broadcast production.</p>
+        </header>
+
+        <div class="market-grid">
+          <div class="market-copy">
+            <p class="av-plus" aria-hidden="true">AV+</p>
+            <p class="lede lede-dark">Full-spectrum technical capability across audio, visual, lighting, and staging.</p>
+          </div>
+          <div class="market-copy">
+            <p>AV Rentall is positioned at the intersection of premium equipment supply and expert production delivery — offering clients a single point of contact for their entire technical event infrastructure. Our scalable model supports everything from a 50-person boardroom briefing to a 10,000-capacity open-air concert.</p>
+            <p class="scale">
+              <span>50-person boardroom briefing</span>
+              <span class="scale-line" aria-hidden="true"></span>
+              <span>10,000-capacity open-air concert</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 — CAPABILITIES
+         ============================================================ -->
+    <section class="section" id="capabilities" aria-labelledby="capabilities-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Capabilities</p>
+          <h2 class="h2" id="capabilities-heading">What Sets AV Rentall Apart</h2>
+          <p class="section-intro">We go beyond simple equipment hire. AV Rentall integrates technical expertise, logistics management, and creative collaboration to give every client a seamlessly produced event — regardless of scale or complexity.</p>
+        </header>
+
+        <div class="cards cards-3">
+          <article class="card card-numbered">
+            <span class="card-index" aria-hidden="true">01</span>
+            <h3 class="h3-card">End-to-End Project Management</h3>
+            <p>From initial brief through site surveys, technical riders, logistics coordination, and live-day crew deployment — our project managers own every detail so your event runs flawlessly.</p>
+          </article>
+
+          <article class="card card-numbered">
+            <span class="card-index" aria-hidden="true">02</span>
+            <h3 class="h3-card">Premium Inventory Fleet</h3>
+            <p>Our warehouse holds an extensive roster of market-leading audio, visual, lighting, and staging equipment — maintained to exacting standards and available for short-term rental or full production deployment.</p>
+          </article>
+
+          <article class="card card-numbered">
+            <span class="card-index" aria-hidden="true">03</span>
+            <h3 class="h3-card">Custom Stage Environments</h3>
+            <p>Our in-house staging and fabrication team designs and builds bespoke stage structures, set pieces, and scenic elements that transform any venue into a precisely crafted production environment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — EVENT TYPES
+         ============================================================ -->
+    <section class="section section-alt" id="event-types" aria-labelledby="events-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Event Types</p>
+          <h2 class="h2" id="events-heading">Built for Every Type of Production</h2>
+          <p class="section-sub">From intimate gatherings to major live productions</p>
+        </header>
+
+        <div class="split">
+          <div class="split-copy">
+            <p>AV Rentall serves a diverse client base — from Fortune 500 companies staging national sales conferences to independent promoters producing sold-out concert tours. We scale our resources precisely to your production demands.</p>
+            <p>Our multi-disciplinary crew includes audio engineers, lighting directors, video technicians, riggers, and stage managers — all experienced in high-pressure live environments.</p>
+            <ul class="chips" aria-label="Event types served">
+              <li>Corporate</li>
+              <li>Concerts</li>
+              <li>Festivals</li>
+              <li>Broadcast</li>
+            </ul>
+          </div>
+          <figure class="split-figure">
+            <img src="assets/photography/concert-audience-lights-unsplash.jpg"
+                 alt="Concert audience silhouetted against stage lighting during a live show" width="3000" height="2000">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — EQUIPMENT
+         ============================================================ -->
+    <section class="section" id="equipment" aria-labelledby="equipment-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Equipment</p>
+          <h2 class="h2" id="equipment-heading">High-Grade Equipment Rental</h2>
+          <p class="section-intro">AV Rentall maintains an expansive, professionally maintained inventory of entertainment technology equipment, available for dry hire or as part of a fully crewed production package.</p>
+        </header>
+
+        <div class="split split-reverse">
+          <div class="split-copy">
+            <div class="equip-row">
+              <h3 class="h3-card">Professional Audio</h3>
+              <p>Top-tier line array systems, digital mixing consoles, stage monitoring, wireless microphone systems, and in-ear monitoring for artists and presenters at any scale.</p>
+            </div>
+            <div class="equip-row">
+              <h3 class="h3-card">Video &amp; LED</h3>
+              <p>High-resolution LED panels, large-format projection, video processors, broadcast cameras, IMAG systems, and content management solutions for live and hybrid events.</p>
+            </div>
+            <div class="equip-row">
+              <h3 class="h3-card">Staging &amp; Structures</h3>
+              <p>Modular staging platforms, trussing systems, rigging hardware, crowd barriers, and custom fabricated scenic elements engineered to meet production and safety specifications.</p>
+            </div>
+          </div>
+          <figure class="split-figure">
+            <img src="assets/photography/audio-mixer-detail-unsplash.jpg"
+                 alt="Close-up detail of knobs and faders on a professional audio mixing desk" width="3000" height="4500">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 8 — PROCESS
+         ============================================================ -->
+    <section class="section section-dark" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker kicker-dark">Our Processes</p>
+          <h2 class="h2 h2-dark" id="process-heading">How AV Rentall Delivers</h2>
+        </header>
+
+        <ol class="process">
+          <li class="process-step">
+            <span class="process-num" aria-hidden="true">01</span>
+            <h3 class="process-title">Brief &amp; Consultation</h3>
+            <p>Gather goals and client needs</p>
+          </li>
+          <li class="process-step">
+            <span class="process-num" aria-hidden="true">02</span>
+            <h3 class="process-title">Technical Design</h3>
+            <p>Create equipment and stage plans</p>
+          </li>
+          <li class="process-step">
+            <span class="process-num" aria-hidden="true">03</span>
+            <h3 class="process-title">Pre-Production</h3>
+            <p>Logistics, schedules, and rehearsals</p>
+          </li>
+          <li class="process-step">
+            <span class="process-num" aria-hidden="true">04</span>
+            <h3 class="process-title">Live Event Delivery</h3>
+            <p>Execute AV, staging, and support</p>
+          </li>
+          <li class="process-step">
+            <span class="process-num" aria-hidden="true">05</span>
+            <h3 class="process-title">Debrief &amp; Review</h3>
+            <p>Collect feedback and document learnings</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 9 — CONTACT
+         ============================================================ -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Connect</p>
+          <h2 class="h2" id="contact-heading">Get in Touch</h2>
+          <p class="section-sub">Ready to elevate your next event? Our team is standing by to help bring your vision to life.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-channels">
+            <div class="contact-card">
+              <span class="contact-label">WhatsApp or Call Us</span>
+              <p class="contact-value">
+                <a href="tel:+27645520890">+27 64 552 0890</a>
+                <a class="contact-mini" href="https://wa.me/27645520890" target="_blank" rel="noopener">WhatsApp ↗</a>
+              </p>
+              <p class="contact-desc">Our dedicated team is available during business hours to discuss your project.</p>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-label">Email Us</span>
+              <p class="contact-value"><a href="mailto:info@avrentall.com">info@avrentall.com</a></p>
+              <p class="contact-desc">Send us a detailed inquiry and we'll get back to you within 24 hours.</p>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-label">Visit Our Website</span>
+              <p class="contact-value"><a href="https://www.avrentall.com" target="_blank" rel="noopener">www.avrentall.com</a></p>
+              <p class="contact-desc">Explore our full range of services, equipment inventory, and project portfolio.</p>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-label">Our Headquarters</span>
+              <p class="contact-value">M109 The Hangar Zwartkop, 0157</p>
+              <p class="contact-desc">Schedule an appointment to experience a demo of our .</p>
+              <!-- CONTENT WARNING (pre-publication): The source PDF ends this sentence mid-phrase:
+                   "Schedule an appointment to experience a demo of our ."
+                   The owner must complete the sentence (e.g. "...of our equipment, staging, or capabilities")
+                   and remove this warning before publishing. -->
+              <p class="content-warning" role="note"><strong>Content note:</strong> the sentence above is incomplete in the source profile — complete it before publishing.</p>
+            </div>
+          </div>
+
+          <!-- Enquiry form. Front-end only: submitting opens a pre-filled email draft to
+               info@avrentall.com. Connect to your form backend / service before going live. -->
+          <form class="enquiry-form" id="enquiry-form" novalidate>
+            <h3 class="h3-form">Send an Enquiry</h3>
+
+            <!-- Honeypot: hidden from humans; bots that fill it get silently ignored -->
+            <div class="hp-wrap" aria-hidden="true">
+              <label for="f-website">Leave this field empty</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">Name *</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="f-company">Company</label>
+                <input id="f-company" name="company" type="text" autocomplete="organization">
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-email">Email *</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-type">Event Type</label>
+                <select id="f-type" name="event-type">
+                  <option value="">Select…</option>
+                  <option>Corporate</option>
+                  <option>Concert / Live Event</option>
+                  <option>Festival</option>
+                  <option>Broadcast</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-date">Event Date</label>
+                <input id="f-date" name="event-date" type="date">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-details">Project Details *</label>
+              <textarea id="f-details" name="details" rows="5" required placeholder="Tell us about your event, venue, and technical requirements…"></textarea>
+            </div>
+
+            <button class="btn btn-ink btn-block" type="submit">Send Enquiry</button>
+            <p class="form-hint">Sending compiles your details into a WhatsApp message to our team. Prefer email? <a href="#enquiry-form" id="send-email-alt">Send it as a compiled email instead</a>.</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo/av-rentall-lockup-white-transparent.png"
+             alt="AV Rentall — ALL AUDIOVISUAL &amp; MORE" width="604" height="420">
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <p>© <span id="year">2026</span> AV Rentall. All rights reserved.</p>
+        <p class="footer-credit">Photography via Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
