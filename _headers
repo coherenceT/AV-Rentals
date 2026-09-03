@@ -1,0 +1,24 @@
+# ------------------------------------------------------------------
+# AV Rentall — deployment security headers
+# Format: Netlify `_headers` (also supported by Cloudflare Pages,
+# Render, GitHub Pages is NOT — see note at the bottom).
+# Push this file to your repo root and deploy; headers apply to
+# every response automatically.
+# ------------------------------------------------------------------
+
+# All routes
+/*
+  # --- Basic hardening ---
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+  # --- Content Security Policy ---
+  # Google Fonts origins are allowed for the stylesheet/fonts.
+  # Inline style attributes (audience-mix bar widths, JS error
+  # colours) are permitted via style-src-attr only.
+  # The enquiry form is JS-only, so no unsafe-inline scripts.
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self' mailto: https://wa.me; upgrade-insecure-requests
