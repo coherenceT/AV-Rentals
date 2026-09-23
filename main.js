@@ -6,47 +6,7 @@
 
   var header = document.getElementById("site-header");
   var toggle = document.getElementById("nav-toggle");
-  var nav = document.getElementById("nav-links");
-  var themeToggle = document.getElementById("theme-toggle");
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  /* ------------------------------------------------------------------
-     Dark / light theme — a quiet, user-driven feature. Defaults to the
-     visitor's OS preference or light, never forces itself.
-     ------------------------------------------------------------------ */
-  var THEME_KEY = "avr-theme";
-
-  function applyTheme(theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-    if (!themeToggle) return;
-    var dark = theme === "dark";
-    themeToggle.setAttribute("aria-pressed", dark ? "true" : "false");
-    themeToggle.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
-    var label = themeToggle.querySelector(".theme-label");
-    if (label) label.textContent = dark ? "Light" : "Dark";
-  }
-
-  function currentTheme() {
-    return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
-  }
-
-  (function initTheme() {
-    var stored = null;
-    try { stored = localStorage.getItem(THEME_KEY); } catch (e) { /* private mode */ }
-    var preferred = stored;
-    if (!preferred && window.matchMedia) {
-      preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    }
-    applyTheme(preferred || "light");
-  })();
-
-  if (themeToggle) {
-    themeToggle.addEventListener("click", function () {
-      var next = currentTheme() === "dark" ? "light" : "dark";
-      applyTheme(next);
-      try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* ignore */ }
-    });
-  }
 
   /* ------------------------------------------------------------------
      Buttery, eased anchor scrolling (with smooth cancelling)
@@ -123,9 +83,9 @@
     });
   }
 
-  if (nav) {
-    nav.addEventListener("click", function (e) {
-      if (e.target.closest("a") && !e.target.closest(".theme-toggle")) closeNav();
+  if (header) {
+    header.addEventListener("click", function (e) {
+      if (e.target.closest("a")) closeNav();
     });
   }
 
@@ -165,16 +125,17 @@
      never hidden when JS is unavailable)
      ------------------------------------------------------------------ */
   var revealTargets = [
-    ".section-head",
+    ".head",
     ".overview-grid",
     ".mix-panel",
+    ".cards-2 .card",
     ".cards-3 .card",
     ".note",
-    ".band",
-    ".market-grid",
-    ".split",
     ".process-step",
-    ".contact-channels",
+    ".review",
+    ".faq-item",
+    ".tile",
+    ".contact-card",
     ".enquiry-form",
     ".site-footer .footer-grid"
   ];
