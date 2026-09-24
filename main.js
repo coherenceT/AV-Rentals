@@ -128,13 +128,8 @@
     ".head",
     ".overview-grid",
     ".mix-panel",
-    ".cards-2 .card",
     ".cards-3 .card",
     ".note",
-    ".process-step",
-    ".review",
-    ".faq-item",
-    ".tile",
     ".contact-card",
     ".enquiry-form",
     ".site-footer .footer-grid"
