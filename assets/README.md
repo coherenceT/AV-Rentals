@@ -13,6 +13,8 @@ This package contains the source PDF, extracted logo lockups, reusable source gr
 | `assets/logo/` | Light and dark logo lockups, including transparent variants prepared from the PDF assets |
 | `assets/source_graphics/` | Market-growth, event-types, and process graphics extracted from the PDF |
 | `assets/photography/` | Four selected Unsplash images for hero, services, audio, and event-type sections |
+| `assets/favicons/` | Favicon set generated from the white logo mark: multi-size `.ico`, 16/32 PNG, 180 apple-touch, 192/512 Android icons (plus maskable variants), 150 tile, and a traced vector `safari-pinned-tab.svg` |
+| `assets/social/` | `og-1200x630.png` social-share card used by the Open Graph and Twitter tags |
 | `image-sources-and-license.md` | Image provenance and license notes |
 
 ## Important content note
