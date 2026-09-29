@@ -902,8 +902,6 @@ a:hover { color: var(--turquoise-strong); }
 
   .contact-label { animation-delay: 0.5s; }
   .contact-channels .contact-card:nth-child(2) .contact-label { animation-delay: 0.95s; }
-  .contact-channels .contact-card:nth-child(3) .contact-label { animation-delay: 1.4s; }
-  .contact-channels .contact-card:nth-child(4) .contact-label { animation-delay: 1.85s; }
 
   .contact-mini { animation-delay: 1.2s; }
   .hashtag      { animation-delay: 1.6s; }
