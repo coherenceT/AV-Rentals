@@ -12,7 +12,7 @@ This package contains the source PDF, extracted logo lockups, reusable source gr
 | `AVRentall-website-builder-prompt.md` | Full prompt for an AI website builder |
 | `assets/logo/` | Light and dark logo lockups, including transparent variants prepared from the PDF assets |
 | `assets/source_graphics/` | Market-growth, event-types, and process graphics extracted from the PDF |
-| `assets/photography/` | Four selected Unsplash images for hero, services, audio, and event-type sections |
+| `assets/photography/` | Four selected Unsplash images for hero, services, audio, and event-type sections, plus four client-supplied event photos (`led-wall-stage.jpg`, `graduation-gala-stage.jpg`, `moving-head-lighting.jpg`, `broadcast-camera-coverage.jpg`) powering the scrolling hero filmstrip |
 | `assets/favicons/` | Favicon set generated from the white logo mark: multi-size `.ico`, 16/32 PNG, 180 apple-touch, 192/512 Android icons (plus maskable variants), 150 tile, and a traced vector `safari-pinned-tab.svg` |
 | `assets/social/` | `og-1200x630.png` social-share card used by the Open Graph and Twitter tags |
 | `image-sources-and-license.md` | Image provenance and license notes |
@@ -27,7 +27,7 @@ Use `av-rentall-logo-white-transparent.png` on near-black or photographic backgr
 
 ## Photography usage
 
-The included photographs were selected from Unsplash search results for event-production, stage-lighting, concert, and audio-mixing themes. Unsplash states that its images may be used for most commercial, personal, and editorial projects without requesting permission or providing credit, although credit is appreciated. Review the current terms and the image-source notes before final publication, and check each individual image page for any model, trademark, or recognizable-property concerns.
+The included photographs were selected from Unsplash search results for event-production, stage-lighting, concert, and audio-mixing themes. Four additional client-supplied event photographs (staging, lighting, and broadcast coverage) were resized to 1200px wide, stripped of EXIF metadata, and named for the scrolling filmstrip in the hero; they remain the client's own copyright. Unsplash states that its images may be used for most commercial, personal, and editorial projects without requesting permission or providing credit, although credit is appreciated. Review the current terms and the image-source notes before final publication, and check each individual image page for any model, trademark, or recognizable-property concerns.
 
 ## Recommended implementation
 
